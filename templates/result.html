@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pre-Diabetes and Diabetes Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/result.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💉</text></svg>">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="left"><a href="{{ url_for('home') }}">Diabetes Prediction</a></div>
+        <div class="right">
+            <div><a href="{{ url_for('predictn') }}">Predict Now</a></div>
+            <div><a href="{{ url_for('about') }}">About</a></div>
+        </div>
+    </nav>
+
+    <div class="info">
+        <!-- Static content -->
+        <div class="pinktext">
+            “Life is not over because you have diabetes. <br> Make the most of what you have, be grateful.”
+        </div>
+        <a class="btn" href="{{ url_for('predictn') }}">Predict Again</a>
+        <div class="predres">
+            Output: {{ prediction_text }}
+        </div>
+        <div class="basic">
+            <div class="t">What to do now?</div>
+            <div class="text">
+                <div class="tleft">
+                    {% block tleft %} {% endblock %}
+                </div>
+                <div class="tright">
+                    {% block tright %} {% endblock %}
+                </div>
+            </div>
+        </div>
+        <div class="links">
+            <div class="t">Useful Reads</div>
+            <div class="text">
+                <div class="tleft">
+                    {% block tleft1 %} {% endblock %}
+                </div>
+                <div class="tright">
+                    {% block tright1 %} {% endblock %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

@@ -35,6 +35,7 @@ button {
     font-size: 1.5rem;
     margin-top: 2rem;
     font-family: 'EB Garamond', serif;
+    cursor: pointer;
 }
 
 a {

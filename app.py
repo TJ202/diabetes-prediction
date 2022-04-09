@@ -56,25 +56,24 @@ def predictn():
 
 @app.route('/predict',methods=['POST'])
 def predict():
-    # print("hello we will now predict")
+    # choose individual values and convert to numpy array
     input_features = [float(x) for x in request.form.values()]
     features_value = [np.array(input_features)]
-    
+    # assign names to columns
     features_name = [ "Pregnancies", "Glucose", "BloodPressure", "SkinThickness", "Insulin", "BMI", "DiabetesPedigreeFunction", "Age"]
-    
+    # dataframe
     df = pd.DataFrame(features_value, columns=features_name)
-    # output = model.predict(features_value)
-    output=0
-    print(type(int(request.form.get("Glucose"))))
+    # pass values to ml model to predict
+    output = model.predict(features_value)
+    
+    # render template based on output of prediction
     if output == 1:
-        res_val = "Diabetes"
+        return render_template('diabetes.html', prediction_text='Diabetic')
     elif output==0:
         if int(request.form.get("Glucose"))<200 and int(request.form.get("Glucose"))>140:
-            res_val = "Pre-Diabetic"
+            return render_template('prediabetes.html', prediction_text='Pre-Diabetic')
         else:
-            res_val = "No Diabetes"
+            return render_template('nodiabetes.html', prediction_text='Not Diabetic')
         
-    return render_template('index.html', prediction_text='Patient has {}'.format(res_val),content='')
-
 if __name__ == "__main__":
     app.run(debug=True)
