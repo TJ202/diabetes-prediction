@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Pre-Diabetes and Diabetes Prediction</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/about.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💉</text></svg>">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="left"><a href="{{ url_for('home') }}">Diabetes Prediction</a></div>
+        <div class="right">
+            <div><a href="{{ url_for('predictn') }}">Predict Now</a></div>
+            <div><a href="{{ url_for('about') }}">About</a></div>
+        </div>
+    </nav>
+
+    <div class="general">
+        <!-- Intro para -->
+        <div class="intro">
+            <h1>About the Project..</h1>
+            <p>Some Crap about the project <br>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus explicabo, blanditiis officia nostrum, consequuntur et, placeat earum aliquam provident dolore tempora molestiae odit rerum. Quisquam repudiandae
+                laudantium ipsa animi ipsum. <br>Checkout the resources here:-</p>
+            <div class="wrap">
+                <div class="one">
+                    <a href="{{ url_for('mlmodel') }}"><i class="fa-solid fa-file-code fa-lg"></i>
+                        <b>Code for the ML Model</b></a>
+                </div>
+                <div class="one">
+                    <a href="{{ url_for('websitecode') }}"><i class="fa-solid fa-file-code fa-lg"></i>
+                        <b>Code for the Hosted Website</b></a>
+                </div>
+                <div class="one">
+                    <a href="{{ url_for('pdf') }}"><i class="fa-solid fa-file-pdf fa-lg"></i><b>Final Document</b></a>
+                </div>
+            </div><br>
+            <h1>Get To Know the Team behind this Project..</h1>
+            <p>Some Crap about us and maam <br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, accusantium ea voluptates consectetur sapiente veniam impedit aliquid ratione optio aut animi! Ex et nisi fugiat a beatae vitae nobis alias!</p>
+            <div class="wrap">
+                <div>
+                    <h2>Tanvi S. Johari</h2>
+                    <div class="cen">
+                        <a href="{{ url_for('vigh') }}"><i class="first fa-brands fa-github-square fa-2xl"></i></a>
+                        <a href="{{ url_for('viln') }}"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Harikrishnan Nair</h2>
+                    <div class="cen">
+                        <a href="{{ url_for('hgh') }}"><i class="first fa-brands fa-github-square fa-2xl"></i></a>
+                        <a href="{{ url_for('hln') }}"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h2>Kaushik S. Prabhakar</h2>
+                    <div class="cen">
+                        <a href="{{ url_for('kgh') }}"><i class="first fa-brands fa-github-square fa-2xl"></i></a>
+                        <a href="{{ url_for('kln') }}"><i class="fa-brands fa-linkedin fa-2xl"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

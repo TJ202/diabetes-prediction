@@ -1,0 +1,90 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'EB Garamond', serif;
+}
+
+nav {
+    display: flex;
+    padding: 0.5rem 1rem;
+    justify-content: space-between;
+    background-color: #BB8484;
+    color: white;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    text-decoration-color: white;
+    text-decoration: underline;
+}
+
+.wrap a {
+    color: black;
+}
+
+.one a:hover,
+i:hover {
+    color: #BB8484;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin: 0 0 1rem 0;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+b {
+    font-size: 1.5rem;
+    margin-left: 0.4rem;
+}
+
+.first {
+    margin-right: 1rem;
+}
+
+.left {
+    font-size: 1.5rem;
+}
+
+.right {
+    font-size: 1.3rem;
+    display: flex;
+    align-items: center;
+}
+
+.right div {
+    margin-left: 1rem;
+}
+
+.general {
+    padding: 2rem 3rem;
+}
+
+.wrap {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.cen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.one {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
