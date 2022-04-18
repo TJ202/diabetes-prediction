@@ -108,7 +108,7 @@ a:hover {
 }
 
 .bg {
-    background-image: url("http://127.0.0.1:5000/static/images/home.png");
+    background-image: url("../images/home.png");
     background-size: cover;
     display: flex;
     justify-content: center;
