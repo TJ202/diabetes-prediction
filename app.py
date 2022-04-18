@@ -4,7 +4,7 @@ from flask import Flask, redirect, request, render_template, url_for
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model_pkl', 'rb'))
+model = pickle.load(open('model.pkl', 'rb'))
 
 @app.route('/')
 def home():
@@ -44,7 +44,7 @@ def mlmodel():
 
 @app.route('/websitecode')
 def websitecode():
-    return redirect('')
+    return redirect('https://github.com/TJ202/diabetes-prediction')
 
 @app.route('/pdf')
 def pdf():
