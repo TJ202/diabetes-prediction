@@ -140,4 +140,14 @@ a:hover {
 
 ul {
     font-size: 1.3rem;
+    margin-top: 0;
+}
+
+.gui {
+    text-align: center !important;
+}
+
+.gui b {
+    font-size: 1.7rem;
+    text-decoration: underline;
 }

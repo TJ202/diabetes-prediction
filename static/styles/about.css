@@ -34,9 +34,14 @@ i:hover {
     color: #BB8484;
 }
 
-h1 {
+.abt {
     font-size: 2.5rem;
     margin: 0 0 1rem 0;
+}
+
+.gen {
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0;
 }
 
 p {
@@ -87,4 +92,13 @@ b {
     display: flex;
     flex-direction: row;
     align-items: center;
+}
+
+.innerWrap p {
+    margin: 0 0 1rem 0;
+    text-align: center;
+}
+
+.innerWrap h2 {
+    margin-bottom: 0.1rem;
 }
