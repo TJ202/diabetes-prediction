@@ -4,7 +4,7 @@ from flask import Flask, redirect, request, render_template, url_for
 import pickle
 
 app = Flask(__name__)
-model = pickle.load(open('model.pkl', 'rb'))
+model = pickle.load(open('model_rfc.pkl', 'rb'))
 
 @app.route('/')
 def home():
