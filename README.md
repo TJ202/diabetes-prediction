@@ -1,6 +1,6 @@
 # Prediction of Pre-Diabetes and Diabetes in Mothers above 21 years of age with Machine Learning Models
 
-*Link:* https://mothers-diabetes-predictor.herokuapp.com/
+*Link -> * https://mothers-diabetes-predictor.herokuapp.com/
 
 ## About the Project
 
