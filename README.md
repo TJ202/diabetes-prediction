@@ -1,7 +1,5 @@
 # Prediction of Pre-Diabetes and Diabetes in Mothers above 21 years of age with Machine Learning Models
 
-*Link:* https://mothers-diabetes-predictor.herokuapp.com/
-
 ## About the Project
 
 The purpose of this project titled, ‘Prediction of Pre-Diabetes and Diabetes in Mothers above 21 years of age with Machine Learning Models’, is to build a website which collects relevant user details and predicts their diabetic condition using a Machine Learning model. 
